@@ -1,2 +1,26 @@
 gateway:
-  traefikAddress: 10.0.0.80
+  enabled: true
+  traefikAddress: traefik-ingress-service.kube-system
+
+traefik:
+  enabled: false
+redis:
+  enabled: false
+prometheus:
+  enabled: false
+grafana:
+  enabled: false
+kubernetes-dashboard:
+  enabled: false
+configstore:
+  enabled: false
+actualizer:
+  enabled: false
+kube-watcher:
+  enabled: false
+storageClass:
+  enabled: false
+customerNamespace:
+  enabled: true
+  name: customer2
+
