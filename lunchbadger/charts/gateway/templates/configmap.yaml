@@ -9,7 +9,7 @@ data:
   gateway.conf: |-
     {{- if eq true .Values.production }}
     https: 
-    port: ${EG_HTTPS_PORT:-443}
+    port: ${EG_HTTPS_PORT:-8443}
     tls: 
       '*.lunchbadger.io': 
         key: /etc/lunchbadger-tls/lunchbadger.io.key.pem
@@ -25,7 +25,7 @@ data:
         cert: /etc/lunchbadger-tls/lunchbadger.io.cert.pem
     {{- else }}
     http: 
-      port: ${EG_HTTP_PORT:-80}
+      port: ${EG_HTTP_PORT:-8080}
     {{- end }}
     admin: # remove this section to disable admin API
       port: 9876

@@ -10,11 +10,11 @@ spec:
   ports:
 {{- if eq true .Values.production }}
     - port: 443
-      targetPort: 443 
+      targetPort: 8443 
       protocol: TCP
 {{- else }}
     - port: 80
-      targetPort: 80 
+      targetPort: 8080 
       protocol: TCP
 {{- end }}
   selector:
