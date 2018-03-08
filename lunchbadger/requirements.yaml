@@ -9,7 +9,7 @@ dependencies:
     version: 1.0.0-beta
     condition: actualizer.enabled
   - name: gateway 
-    version: 1.0.0-beta
+    version: 1.6.0
     condition: gateway.enabled
   - name: kube-watcher 
     version: 1.0.0-beta

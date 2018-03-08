@@ -1,5 +1,6 @@
 rbac:
   enabled: true
+namespace: default
 images:
   actualizer:
     repository: 410240865662.dkr.ecr.us-west-2.amazonaws.com/actualizer

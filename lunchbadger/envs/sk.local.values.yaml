@@ -1,3 +1,7 @@
+gateway:
+  enabled: true
+  traefikAddress: traefik-ingress-service.kube-system
+
 traefik:
   enabled: false
 redis:
@@ -9,19 +13,14 @@ grafana:
 kubernetes-dashboard:
   enabled: false
 configstore:
-  enabled: true
+  enabled: false
 actualizer:
-  enabled: true
+  enabled: false
 kube-watcher:
-  enabled: true 
-gateway:
-  enabled: true
+  enabled: false
 storageClass:
   enabled: false
-  name: standard
-  type: gp2
-  zones: 'us-west-2a, us-west-2b, us-west-2c'
-  iopsPerGB: 10
 customerNamespace:
   enabled: true
-  name: customer
+  name: customer2
+

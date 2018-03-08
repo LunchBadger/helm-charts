@@ -6,6 +6,7 @@ metadata:
   labels:
     environment: dev
     producer: lunchbadger
+    namespace: {{ .Values.namespace }}
   name: gateway-lunchbadger-dev
 spec:
   selector:
